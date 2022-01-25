@@ -11,10 +11,12 @@ public class FlipkartSample {
 	WebDriver driver;
 	@BeforeTest
 	public void launchBrowser() {
+		
+		//learning selenium program
 		System.setProperty("webdriver.chrome.driver", "B:\\work space\\Automationtesting\\Drivers\\chromedriver.exe");
 	    driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to("http://www.flipkart.com");
+		driver.navigate().to("http://www.google.com");
 	}
 	@Test
 	public void test() {
